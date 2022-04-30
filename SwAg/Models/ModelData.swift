@@ -11,6 +11,11 @@ final class ModelData: ObservableObject {
     var dataStructureList: [ListItem] = load("dataStructureList.json")
     var algorithmList: [ListItem] = load("algorithmList.json")
     var bubbleSort: [SortItem] = load("bubbleSort.json")
+    var selectionSort: [SortItem] = load("selectionSort.json")
+    var insertionSort: [SortItem] = load("insertionSort.json")
+    var heapSort: [SortItem] = load("heapSort.json")
+    var mergeSort: [SortItem] = load("mergeSort.json")
+    var quickSort: [SortItem] = load("quickSort.json")
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

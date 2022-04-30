@@ -17,6 +17,16 @@ struct DescriptionView: View {
         switch item.name {
         case "Bubble Sort":
             return ModelData().bubbleSort
+        case "Selection Sort":
+            return ModelData().selectionSort
+        case "Insertion Sort":
+            return ModelData().insertionSort
+        case "Heap Sort":
+            return ModelData().heapSort
+        case "Merge Sort":
+            return ModelData().mergeSort
+        case "Quick Sort":
+            return ModelData().quickSort
         default:
             return nil
         }

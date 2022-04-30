@@ -30,5 +30,5 @@
     {
         "idxList" : [1, 2, 3, 4, 5, 6, 7],
         "colorList" : ["red", "green", "indigo", "brown", "purple", "gray", "blue"]
-    },
+    }
 ]
