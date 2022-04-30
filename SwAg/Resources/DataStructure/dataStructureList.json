@@ -1,0 +1,35 @@
+[
+    {
+        "name": "List",
+        "type": "list"
+    },
+    {
+        "name": "Array",
+        "type": "array"
+    },
+    {
+        "name": "Stack",
+        "type": "stack"
+    },
+    {
+        "name": "Queue",
+        "type": "queue"
+    },
+    {
+        "name": "Hash Table",
+        "type": "hash"
+    },
+    {
+        "name": "Heap",
+        "type": "heap"
+    },
+    {
+        "name": "Tree",
+        "type": "tree"
+    },
+    {
+        "name": "Binary Searching Tree",
+        "type": "tree"
+    },
+]
+

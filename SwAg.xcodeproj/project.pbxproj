@@ -13,6 +13,20 @@
 		16901D2328192ABB000A3CAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16901D2228192ABB000A3CAB /* Preview Assets.xcassets */; };
 		16901D2528192ABB000A3CAB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D2428192ABB000A3CAB /* Persistence.swift */; };
 		16901D2828192ABB000A3CAB /* SwAg.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16901D2628192ABB000A3CAB /* SwAg.xcdatamodeld */; };
+		16901D38281935D5000A3CAB /* DataStructureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D37281935D5000A3CAB /* DataStructureList.swift */; };
+		16901D3A2819368E000A3CAB /* AlgorithmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D392819368E000A3CAB /* AlgorithmList.swift */; };
+		16901D3C281994C5000A3CAB /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D3B281994C5000A3CAB /* ListItem.swift */; };
+		16901D3E281998B4000A3CAB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D3D281998B4000A3CAB /* ModelData.swift */; };
+		16901D4228199AD5000A3CAB /* algorithmList.json in Resources */ = {isa = PBXBuildFile; fileRef = 16901D4128199AD5000A3CAB /* algorithmList.json */; };
+		16901D4628199D36000A3CAB /* dataStructureList.json in Resources */ = {isa = PBXBuildFile; fileRef = 16901D4528199D36000A3CAB /* dataStructureList.json */; };
+		16901D49281A45E8000A3CAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16901D4B281A45E8000A3CAB /* Localizable.strings */; };
+		16901D4E281A6ABD000A3CAB /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D4D281A6ABD000A3CAB /* DescriptionView.swift */; };
+		16901D50281A6E07000A3CAB /* DescriptionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D4F281A6E07000A3CAB /* DescriptionCard.swift */; };
+		16901D52281A7C4F000A3CAB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D51281A7C4F000A3CAB /* CustomButton.swift */; };
+		16901D5C281C404E000A3CAB /* SortingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D5B281C404E000A3CAB /* SortingBar.swift */; };
+		16901D5E281C4787000A3CAB /* SortingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D5D281C4787000A3CAB /* SortingGraph.swift */; };
+		16901D60281CC61B000A3CAB /* SortItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D5F281CC61B000A3CAB /* SortItem.swift */; };
+		16901D62281CEFFF000A3CAB /* bubbleSort.json in Resources */ = {isa = PBXBuildFile; fileRef = 16901D61281CEFFF000A3CAB /* bubbleSort.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +37,21 @@
 		16901D2228192ABB000A3CAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16901D2428192ABB000A3CAB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		16901D2728192ABB000A3CAB /* SwAg.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwAg.xcdatamodel; sourceTree = "<group>"; };
+		16901D37281935D5000A3CAB /* DataStructureList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructureList.swift; sourceTree = "<group>"; };
+		16901D392819368E000A3CAB /* AlgorithmList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmList.swift; sourceTree = "<group>"; };
+		16901D3B281994C5000A3CAB /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		16901D3D281998B4000A3CAB /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		16901D4128199AD5000A3CAB /* algorithmList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = algorithmList.json; sourceTree = "<group>"; };
+		16901D4528199D36000A3CAB /* dataStructureList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataStructureList.json; sourceTree = "<group>"; };
+		16901D4A281A45E8000A3CAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		16901D4C281A45EC000A3CAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		16901D4D281A6ABD000A3CAB /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		16901D4F281A6E07000A3CAB /* DescriptionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCard.swift; sourceTree = "<group>"; };
+		16901D51281A7C4F000A3CAB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		16901D5B281C404E000A3CAB /* SortingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingBar.swift; sourceTree = "<group>"; };
+		16901D5D281C4787000A3CAB /* SortingGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingGraph.swift; sourceTree = "<group>"; };
+		16901D5F281CC61B000A3CAB /* SortItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortItem.swift; sourceTree = "<group>"; };
+		16901D61281CEFFF000A3CAB /* bubbleSort.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bubbleSort.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				16901D1B28192AB9000A3CAB /* SwAgApp.swift */,
-				16901D1D28192AB9000A3CAB /* ContentView.swift */,
+				16901D2F28193228000A3CAB /* Views */,
+				16901D302819323D000A3CAB /* Models */,
+				16901D3328193369000A3CAB /* Resources */,
+				16901D2E28193210000A3CAB /* Controllers */,
 				16901D1F28192ABB000A3CAB /* Assets.xcassets */,
 				16901D2428192ABB000A3CAB /* Persistence.swift */,
 				16901D2628192ABB000A3CAB /* SwAg.xcdatamodeld */,
@@ -71,6 +103,105 @@
 				16901D2228192ABB000A3CAB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16901D2E28193210000A3CAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		16901D2F28193228000A3CAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16901D1D28192AB9000A3CAB /* ContentView.swift */,
+				16901D35281933EE000A3CAB /* DataStructure */,
+				16901D3628193415000A3CAB /* Algorithm */,
+				16901D34281933E3000A3CAB /* Shared */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		16901D302819323D000A3CAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16901D3D281998B4000A3CAB /* ModelData.swift */,
+				16901D3B281994C5000A3CAB /* ListItem.swift */,
+				16901D5F281CC61B000A3CAB /* SortItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16901D3328193369000A3CAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16901D3F28199A53000A3CAB /* DataStructure */,
+				16901D4028199A67000A3CAB /* Algorithm */,
+				16901D4B281A45E8000A3CAB /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		16901D34281933E3000A3CAB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				16901D4D281A6ABD000A3CAB /* DescriptionView.swift */,
+				16901D4F281A6E07000A3CAB /* DescriptionCard.swift */,
+				16901D51281A7C4F000A3CAB /* CustomButton.swift */,
+				16901D59281C3FC5000A3CAB /* Visualization */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		16901D35281933EE000A3CAB /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				16901D37281935D5000A3CAB /* DataStructureList.swift */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		16901D3628193415000A3CAB /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				16901D392819368E000A3CAB /* AlgorithmList.swift */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		16901D3F28199A53000A3CAB /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				16901D4528199D36000A3CAB /* dataStructureList.json */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		16901D4028199A67000A3CAB /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				16901D4128199AD5000A3CAB /* algorithmList.json */,
+				16901D61281CEFFF000A3CAB /* bubbleSort.json */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		16901D59281C3FC5000A3CAB /* Visualization */ = {
+			isa = PBXGroup;
+			children = (
+				16901D5A281C4027000A3CAB /* Sort */,
+			);
+			path = Visualization;
+			sourceTree = "<group>";
+		};
+		16901D5A281C4027000A3CAB /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				16901D5B281C404E000A3CAB /* SortingBar.swift */,
+				16901D5D281C4787000A3CAB /* SortingGraph.swift */,
+			);
+			path = Sort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +220,8 @@
 			dependencies = (
 			);
 			name = SwAg;
+			packageProductDependencies = (
+			);
 			productName = SwAg;
 			productReference = 16901D1828192AB9000A3CAB /* SwAg.app */;
 			productType = "com.apple.product-type.application";
@@ -115,8 +248,11 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 16901D0F28192AB9000A3CAB;
+			packageReferences = (
+			);
 			productRefGroup = 16901D1928192AB9000A3CAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -131,7 +267,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16901D49281A45E8000A3CAB /* Localizable.strings in Resources */,
 				16901D2328192ABB000A3CAB /* Preview Assets.xcassets in Resources */,
+				16901D4628199D36000A3CAB /* dataStructureList.json in Resources */,
+				16901D62281CEFFF000A3CAB /* bubbleSort.json in Resources */,
+				16901D4228199AD5000A3CAB /* algorithmList.json in Resources */,
 				16901D2028192ABB000A3CAB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,13 +284,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				16901D2528192ABB000A3CAB /* Persistence.swift in Sources */,
+				16901D3C281994C5000A3CAB /* ListItem.swift in Sources */,
+				16901D3A2819368E000A3CAB /* AlgorithmList.swift in Sources */,
+				16901D4E281A6ABD000A3CAB /* DescriptionView.swift in Sources */,
 				16901D1E28192AB9000A3CAB /* ContentView.swift in Sources */,
+				16901D38281935D5000A3CAB /* DataStructureList.swift in Sources */,
+				16901D5C281C404E000A3CAB /* SortingBar.swift in Sources */,
+				16901D50281A6E07000A3CAB /* DescriptionCard.swift in Sources */,
+				16901D52281A7C4F000A3CAB /* CustomButton.swift in Sources */,
+				16901D3E281998B4000A3CAB /* ModelData.swift in Sources */,
 				16901D1C28192AB9000A3CAB /* SwAgApp.swift in Sources */,
+				16901D5E281C4787000A3CAB /* SortingGraph.swift in Sources */,
+				16901D60281CC61B000A3CAB /* SortItem.swift in Sources */,
 				16901D2828192ABB000A3CAB /* SwAg.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16901D4B281A45E8000A3CAB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16901D4A281A45E8000A3CAB /* ko */,
+				16901D4C281A45EC000A3CAB /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		16901D2928192ABB000A3CAB /* Debug */ = {
@@ -281,8 +443,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,8 +473,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

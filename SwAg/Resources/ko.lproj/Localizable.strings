@@ -1,0 +1,73 @@
+/* 
+  Localizable.strings
+  SwAg
+
+  Created by Wonhyuk Choi on 2022/04/28.
+  
+*/
+
+"Data Structure" = "자료구조";
+"Algorithm" = "알고리즘";
+"List" = "리스트";
+"📄 List" = "📄 리스트";
+"Array" = "배열";
+"📄 Array" = "📄 배열";
+"Stack" = "스택";
+"📄 Stack" = "📄 스택";
+"Queue" = "큐";
+"📄 Queue" = "📄 큐";
+"Hash Table" = "해시 테이블";
+"📄 Hash Table" = "📄 해시 테이블";
+"Heap" = "힙";
+"📄 Heap" = "📄 힙";
+"Tree" = "트리";
+"📄 Tree" = "📄 트리";
+"Binary Searching Tree" = "이진 탐색 트리";
+"📄 Binary Searching Tree" = "📄 이진 탐색 트리";
+"Sort" = "정렬";
+"📂 Sort" = "📂 정렬";
+"📁 Sort" = "📁 정렬";
+"Bubble Sort" = "버블 정렬";
+"📄 Bubble Sort" = "📄 버블 정렬";
+"Selection Sort" = "선택 정렬";
+"📄 Selection Sort" = "📄 선택 정렬";
+"Insertion Sort" = "삽입 정렬";
+"📄 Insertion Sort" = "📄 삽입 정렬";
+"Heap Sort" = "힙 정렬";
+"📄 Heap Sort" = "📄 힙 정렬";
+"Merge Sort" = "병합 정렬";
+"📄 Merge Sort" = "📄 병합 정렬";
+"Quick Sort" = "퀵 정렬";
+"📄 Quick Sort" = "📄 퀵 정렬";
+"Clustering" = "클러스터링";
+"📂 Clustering" = "📂 클러스터링";
+"📁 Clustering" = "📁 클러스터링";
+"List Search" = "리스트 탐색";
+"📂 List Search" = "📂 리스트 탐색";
+"📁 List Search" = "📁 리스트 탐색";
+"Linear Search" = "선형 탐색";
+"📄 Linear Search" = "📄 선형 탐색";
+"Binary Search" = "이진 탐색";
+"📄 Binary Search" = "📄 이진 탐색";
+"Graph Search" = "그래프 탐색";
+"📂 Graph Search" = "📂 그래프 탐색";
+"📁 Graph Search" = "📁 그래프 탐색";
+"Breadth-First Search" = "너비 우선 탐색";
+"📄 Breadth-First Search" = "📄 너비 우선 탐색";
+"Depth-First Search" = "깊이 우선 탐색";
+"📄 Depth-First Search" = "📄 깊이 우선 탐색";
+"Bellman-Ford Algorithm" = "벨만-포드 알고리즘";
+"📄 Bellman-Ford Algorithm" = "📄 벨만-포드 알고리즘";
+"Dijkstra's Algorithm" = "다익스트라";
+"📄 Dijkstra's Algorithm" = "📄 다익스트라";
+"A-star Algorithm" = "A-star 알고리즘";
+"📄 A-star Algorithm" = "📄 A-star 알고리즘";
+"Math" = "수학";
+"📂 Math" = "📂 수학";
+"📁 Math" = "📁 수학";
+"Euclidian Algorithm" = "유클리드 호제법";
+"📄 Euclidian Algorithm" = "📄 유클리드 호제법";
+"Primality Test" = "소수 판별법";
+"📄 Primality Test" = "📄 소수 판별법";
+"Copy to clipboard" = "클립보드로 복사";
+"Copied!" = "복사 완료!";

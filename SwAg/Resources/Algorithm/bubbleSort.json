@@ -1,0 +1,34 @@
+[
+    {
+        "idxList" : [5, 3, 1, 2, 4, 7, 6],
+        "colorList" : ["purple", "indigo", "red", "green", "brown", "blue", "gray"]
+    },
+    {
+        "idxList" : [5, 3, 1, 2, 4, 6, 7],
+        "colorList" : ["purple", "indigo", "red", "green", "brown", "gray", "blue"]
+    },
+    {
+        "idxList" : [5, 1, 3, 2, 4, 6, 7],
+        "colorList" : ["purple", "red", "indigo", "green", "brown", "gray", "blue"]
+    },
+    {
+        "idxList" : [1, 5, 3, 2, 4, 6, 7],
+        "colorList" : ["red", "purple", "indigo", "green", "brown", "gray", "blue"]
+    },
+    {
+        "idxList" : [1, 5, 2, 3, 4, 6, 7],
+        "colorList" : ["red", "purple", "green", "indigo", "brown", "gray", "blue"]
+    },
+    {
+        "idxList" : [1, 2, 5, 3, 4, 6, 7],
+        "colorList" : ["red", "green", "purple", "indigo", "brown", "gray", "blue"]
+    },
+    {
+        "idxList" : [1, 2, 3, 5, 4, 6, 7],
+        "colorList" : ["red", "green", "indigo", "purple", "brown", "gray", "blue"]
+    },
+    {
+        "idxList" : [1, 2, 3, 4, 5, 6, 7],
+        "colorList" : ["red", "green", "indigo", "brown", "purple", "gray", "blue"]
+    },
+]

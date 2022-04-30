@@ -1,0 +1,96 @@
+[
+    {
+        "name": "Sort",
+        "type": "category",
+        "children": [
+            {
+                "name": "Bubble Sort",
+                "type": "sort"
+            },
+            {
+                "name": "Selection Sort",
+                "type": "sort"
+            },
+            {
+                "name": "Insertion Sort",
+                "type": "sort"
+            },
+            {
+                "name": "Heap Sort",
+                "type": "sort"
+            },
+            {
+                "name": "Merge Sort",
+                "type": "sort"
+            },
+            {
+                "name": "Quick Sort",
+                "type": "sort"
+            }
+        ]
+    },
+    {
+        "name": "Clustering",
+        "type": "category",
+        "children": [
+            {
+                "name": "k-means",
+                "type": "kmeans"
+            }
+        ]
+    },
+    {
+        "name": "List Search",
+        "type": "category",
+        "children": [
+            {
+                "name": "Linear Search",
+                "type": "search"
+            },
+            {
+                "name": "Binary Search",
+                "type": "search"
+            }
+        ]
+    },
+    {
+        "name": "Graph Search",
+        "type": "category",
+        "children": [
+            {
+                "name": "Breadth-First Search",
+                "type": "graph"
+            },
+            {
+                "name": "Depth-First Search",
+                "type": "graph"
+            },
+            {
+                "name": "Bellman-Ford Algorithm",
+                "type": "graph"
+            },
+            {
+                "name": "Dijkstra's Algorithm",
+                "type": "graph"
+            },
+            {
+                "name": "A-star Algorithm",
+                "type": "graph"
+            }
+        ]
+    },
+    {
+        "name": "Math",
+        "type": "category",
+        "children": [
+            {
+                "name": "Euclidian Algorithm",
+                "type": "euc"
+            },
+            {
+                "name": "Primality Test",
+                "type": "pri"
+            }
+        ]
+    },
+]
