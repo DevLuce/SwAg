@@ -16,7 +16,6 @@ struct SortingGraph: View {
             HStack(alignment: .bottom, spacing: proxy.size.width / 120) {
                 ForEach(Array(zip(item.idxList, item.uiColorList)), id: \.self.0) { index, color in
                     SortingBar(
-                        index: index,
                         color: color,
                         height: proxy.size.height / CGFloat(item.idxList.count) * CGFloat(index),
                         num: index,

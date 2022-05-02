@@ -9,11 +9,11 @@
     },
     {
         "name": "Stack",
-        "type": "stack"
+        "type": "linearData"
     },
     {
         "name": "Queue",
-        "type": "queue"
+        "type": "linearData"
     },
     {
         "name": "Hash Table",

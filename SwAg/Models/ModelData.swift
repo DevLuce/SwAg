@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class ModelData: ObservableObject {
     var dataStructureList: [ListItem] = load("dataStructureList.json")
@@ -16,6 +17,7 @@ final class ModelData: ObservableObject {
     var heapSort: [SortItem] = load("heapSort.json")
     var mergeSort: [SortItem] = load("mergeSort.json")
     var quickSort: [SortItem] = load("quickSort.json")
+    var linearData: [(Int, Color)] = [(1, .blue), (2, .red), (3, .green), (4, .brown), (5, .indigo)]
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

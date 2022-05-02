@@ -32,6 +32,9 @@
 		16901D6A281D223B000A3CAB /* heapSort.json in Resources */ = {isa = PBXBuildFile; fileRef = 16901D65281D223B000A3CAB /* heapSort.json */; };
 		16901D6B281D223B000A3CAB /* selectionSort.json in Resources */ = {isa = PBXBuildFile; fileRef = 16901D66281D223B000A3CAB /* selectionSort.json */; };
 		16901D6C281D223B000A3CAB /* quickSort.json in Resources */ = {isa = PBXBuildFile; fileRef = 16901D67281D223B000A3CAB /* quickSort.json */; };
+		16901D6F281E997C000A3CAB /* SavingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D6E281E997C000A3CAB /* SavingBox.swift */; };
+		16901D71281E9C2C000A3CAB /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D70281E9C2C000A3CAB /* Queue.swift */; };
+		16901D73281EE22F000A3CAB /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D72281EE22F000A3CAB /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		16901D65281D223B000A3CAB /* heapSort.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heapSort.json; sourceTree = "<group>"; };
 		16901D66281D223B000A3CAB /* selectionSort.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = selectionSort.json; sourceTree = "<group>"; };
 		16901D67281D223B000A3CAB /* quickSort.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quickSort.json; sourceTree = "<group>"; };
+		16901D6E281E997C000A3CAB /* SavingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingBox.swift; sourceTree = "<group>"; };
+		16901D70281E9C2C000A3CAB /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		16901D72281EE22F000A3CAB /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				16901D5A281C4027000A3CAB /* Sort */,
+				16901D6D281E98FF000A3CAB /* LinearSpace */,
 			);
 			path = Visualization;
 			sourceTree = "<group>";
@@ -217,6 +224,16 @@
 				16901D5D281C4787000A3CAB /* SortingGraph.swift */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		16901D6D281E98FF000A3CAB /* LinearSpace */ = {
+			isa = PBXGroup;
+			children = (
+				16901D6E281E997C000A3CAB /* SavingBox.swift */,
+				16901D70281E9C2C000A3CAB /* Queue.swift */,
+				16901D72281EE22F000A3CAB /* Stack.swift */,
+			);
+			path = LinearSpace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +322,8 @@
 			files = (
 				16901D2528192ABB000A3CAB /* Persistence.swift in Sources */,
 				16901D3C281994C5000A3CAB /* ListItem.swift in Sources */,
+				16901D6F281E997C000A3CAB /* SavingBox.swift in Sources */,
+				16901D73281EE22F000A3CAB /* Stack.swift in Sources */,
 				16901D3A2819368E000A3CAB /* AlgorithmList.swift in Sources */,
 				16901D4E281A6ABD000A3CAB /* DescriptionView.swift in Sources */,
 				16901D1E28192AB9000A3CAB /* ContentView.swift in Sources */,
@@ -313,6 +332,7 @@
 				16901D50281A6E07000A3CAB /* DescriptionCard.swift in Sources */,
 				16901D52281A7C4F000A3CAB /* CustomButton.swift in Sources */,
 				16901D3E281998B4000A3CAB /* ModelData.swift in Sources */,
+				16901D71281E9C2C000A3CAB /* Queue.swift in Sources */,
 				16901D1C28192AB9000A3CAB /* SwAgApp.swift in Sources */,
 				16901D5E281C4787000A3CAB /* SortingGraph.swift in Sources */,
 				16901D60281CC61B000A3CAB /* SortItem.swift in Sources */,

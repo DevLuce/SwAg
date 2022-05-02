@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SortingBar: View {
-    let index: Int
     let color: Color
     let height: CGFloat
     let num: Int
@@ -33,7 +32,6 @@ struct SortingBar: View {
 struct SortingBar_Previews: PreviewProvider {
     static var previews: some View {
         SortingBar(
-            index: 0,
             color: .blue,
             height: 150,
             num: 1,

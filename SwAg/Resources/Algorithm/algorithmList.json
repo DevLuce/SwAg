@@ -30,16 +30,6 @@
         ]
     },
     {
-        "name": "Clustering",
-        "type": "category",
-        "children": [
-            {
-                "name": "k-means",
-                "type": "kmeans"
-            }
-        ]
-    },
-    {
         "name": "List Search",
         "type": "category",
         "children": [

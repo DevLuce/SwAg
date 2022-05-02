@@ -13,7 +13,7 @@ struct DescriptionView: View {
     private let pasteboard = UIPasteboard.general
     let code : String = "Swift Code"
     
-    var items : [SortItem]? {
+    var sortItems : [SortItem]? {
         switch item.name {
         case "Bubble Sort":
             return ModelData().bubbleSort
@@ -31,26 +31,45 @@ struct DescriptionView: View {
             return nil
         }
     }
-    
     @State var step: Int = 0
+    
+    @State var linearDataItems = ArraySlice(ModelData().linearData)
+    @State var tempLinearData: ArraySlice<(Int, Color)> = ArraySlice([])
     
     var body: some View {
         VStack{
-            DescriptionCard(
-                (items != nil) ?
-                AnyView(
-                    SortingGraph(
-                        item: items![step]
+            switch item.type {
+            case "linearData":
+                if item.name == "Queue" {
+                    DescriptionCard(
+                        Queue(item: linearDataItems)
+                            .padding()
                     )
-                    .padding()
-                    .animation(
-                        .easeInOut
-                            .speed(2)
-                            .delay(0.03),
-                        value: step)
+                } else {
+                    DescriptionCard(
+                        Stack(item: linearDataItems)
+                            .padding()
+                    )
+                }
+            case "sort":
+                DescriptionCard(
+                    (sortItems != nil) ?
+                    AnyView(
+                        SortingGraph(
+                            item: sortItems![step]
+                        )
+                        .padding()
+                        .animation(
+                            .easeInOut
+                                .speed(2)
+                                .delay(0.03),
+                            value: step)
+                    )
+                    : AnyView(Text("\(item.name) Animation"))
                 )
-                : AnyView(Text("\(item.name) Animation"))
-            )
+            default:
+                DescriptionCard(Text("\(item.name) Animation"))
+            }
             DescriptionCard(
                 VStack {
                     Spacer()
@@ -72,21 +91,44 @@ struct DescriptionView: View {
                     .padding()
             )
             HStack{
-                CustomButton(action: {
-                    step = 0
-                }, systemName: "arrowshape.turn.up.backward.2.fill",
-                             backgroudColor: .gray)
-                .disabled(step > 0 ? false : true)
-                CustomButton(action: {
-                    step -= 1
-                }, systemName: "arrowtriangle.backward.fill",
-                             backgroudColor: Color(red: 0.855, green: 0.0, blue: 0.387))
-                .disabled(step > 0 ? false : true)
-                CustomButton(action: {
-                    step += 1
-                }, systemName: "arrowtriangle.forward.fill",
-                             backgroudColor: Color(red: 0.176, green: 0.608, blue: 0.94))
-                .disabled(step < (items?.count ?? 1)-1 ? false : true)
+                if item.type == "linearData" {
+                    CustomButton(action: {
+                        if linearDataItems.count > 0 {
+                            if item.name == "Queue" {
+                                tempLinearData.append(linearDataItems.popFirst()!)
+                            } else {
+                                tempLinearData.append(linearDataItems.popLast()!)
+                            }
+                        }
+                    }, systemName: "square.and.arrow.up.fill",
+                                 backgroudColor: Color(red: 0.855, green: 0.0, blue: 0.387))
+                    CustomButton(action: {
+                        if linearDataItems.count < 5 {
+                            if item.name == "Queue" {
+                                linearDataItems.append(tempLinearData.popFirst()!)
+                            } else {
+                                linearDataItems.append(tempLinearData.popLast()!)
+                            }
+                        }
+                    }, systemName: "square.and.arrow.down.fill",
+                                 backgroudColor: Color(red: 0.176, green: 0.608, blue: 0.94))
+                } else {
+                    CustomButton(action: {
+                        step = 0
+                    }, systemName: "arrowshape.turn.up.backward.2.fill",
+                                 backgroudColor: .gray)
+                    .disabled(step > 0 ? false : true)
+                    CustomButton(action: {
+                        step -= 1
+                    }, systemName: "arrowtriangle.backward.fill",
+                                 backgroudColor: Color(red: 0.855, green: 0.0, blue: 0.387))
+                    .disabled(step > 0 ? false : true)
+                    CustomButton(action: {
+                        step += 1
+                    }, systemName: "arrowtriangle.forward.fill",
+                                 backgroudColor: Color(red: 0.176, green: 0.608, blue: 0.94))
+                    .disabled(step < (sortItems?.count ?? 1)-1 ? false : true)
+                }
             }
             .padding([.leading, .bottom, .trailing])
             .navigationBarTitle(LocalizedStringKey(item.name), displayMode: .inline)
