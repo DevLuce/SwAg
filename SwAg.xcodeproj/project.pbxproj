@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1662EAC528202962009FDD4D /* CircleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1662EAC428202962009FDD4D /* CircleNode.swift */; };
+		1662EAC7282036C6009FDD4D /* Diagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1662EAC6282036C6009FDD4D /* Diagram.swift */; };
+		1662EAC928203E52009FDD4D /* BinaryTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1662EAC828203E52009FDD4D /* BinaryTreeView.swift */; };
 		16901D1C28192AB9000A3CAB /* SwAgApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D1B28192AB9000A3CAB /* SwAgApp.swift */; };
 		16901D1E28192AB9000A3CAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D1D28192AB9000A3CAB /* ContentView.swift */; };
 		16901D2028192ABB000A3CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16901D1F28192ABB000A3CAB /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1662EAC428202962009FDD4D /* CircleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleNode.swift; sourceTree = "<group>"; };
+		1662EAC6282036C6009FDD4D /* Diagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagram.swift; sourceTree = "<group>"; };
+		1662EAC828203E52009FDD4D /* BinaryTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeView.swift; sourceTree = "<group>"; };
 		16901D1828192AB9000A3CAB /* SwAg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwAg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16901D1B28192AB9000A3CAB /* SwAgApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwAgApp.swift; sourceTree = "<group>"; };
 		16901D1D28192AB9000A3CAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1662EAC3282028A2009FDD4D /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				1662EAC428202962009FDD4D /* CircleNode.swift */,
+				1662EAC6282036C6009FDD4D /* Diagram.swift */,
+				1662EAC828203E52009FDD4D /* BinaryTreeView.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		16901D0F28192AB9000A3CAB = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +229,7 @@
 			children = (
 				16901D5A281C4027000A3CAB /* Sort */,
 				16901D6D281E98FF000A3CAB /* LinearSpace */,
+				1662EAC3282028A2009FDD4D /* Graph */,
 			);
 			path = Visualization;
 			sourceTree = "<group>";
@@ -328,11 +345,14 @@
 				16901D4E281A6ABD000A3CAB /* DescriptionView.swift in Sources */,
 				16901D1E28192AB9000A3CAB /* ContentView.swift in Sources */,
 				16901D38281935D5000A3CAB /* DataStructureList.swift in Sources */,
+				1662EAC7282036C6009FDD4D /* Diagram.swift in Sources */,
 				16901D5C281C404E000A3CAB /* SortingBar.swift in Sources */,
+				1662EAC528202962009FDD4D /* CircleNode.swift in Sources */,
 				16901D50281A6E07000A3CAB /* DescriptionCard.swift in Sources */,
 				16901D52281A7C4F000A3CAB /* CustomButton.swift in Sources */,
 				16901D3E281998B4000A3CAB /* ModelData.swift in Sources */,
 				16901D71281E9C2C000A3CAB /* Queue.swift in Sources */,
+				1662EAC928203E52009FDD4D /* BinaryTreeView.swift in Sources */,
 				16901D1C28192AB9000A3CAB /* SwAgApp.swift in Sources */,
 				16901D5E281C4787000A3CAB /* SortingGraph.swift in Sources */,
 				16901D60281CC61B000A3CAB /* SortItem.swift in Sources */,

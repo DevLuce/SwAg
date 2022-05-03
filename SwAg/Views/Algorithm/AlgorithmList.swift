@@ -22,6 +22,7 @@ struct AlgorithmList: View {
                 Text(LocalizedStringKey(item.description))
             }
         }
+        .listStyle(.inset)
     }
 }
 

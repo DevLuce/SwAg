@@ -29,7 +29,7 @@
     },
     {
         "name": "Binary Searching Tree",
-        "type": "tree"
+        "type": "binaryTree"
     },
 ]
 

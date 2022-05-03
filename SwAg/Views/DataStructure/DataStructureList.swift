@@ -22,6 +22,7 @@ struct DataStructureList: View {
                 Text(LocalizedStringKey(item.description))
             }
         }
+        .listStyle(.inset)
     }
 }
 

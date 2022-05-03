@@ -35,6 +35,7 @@ struct DescriptionView: View {
     
     @State var linearDataItems = ArraySlice(ModelData().linearData)
     @State var tempLinearData: ArraySlice<(Int, Color)> = ArraySlice([])
+    @State var binaryTree = uniqueTree
     
     var body: some View {
         VStack{
@@ -51,6 +52,13 @@ struct DescriptionView: View {
                             .padding()
                     )
                 }
+            case "binaryTree":
+                DescriptionCard(
+                    BinaryTreeView(
+                        tree: binaryTree
+                    )
+                    .padding()
+                )
             case "sort":
                 DescriptionCard(
                     (sortItems != nil) ?
@@ -109,6 +117,19 @@ struct DescriptionView: View {
                             } else {
                                 linearDataItems.append(tempLinearData.popLast()!)
                             }
+                        }
+                    }, systemName: "square.and.arrow.down.fill",
+                                 backgroudColor: Color(red: 0.176, green: 0.608, blue: 0.94))
+                } else if item.type == "binaryTree" {
+                    CustomButton(action: {
+                        withAnimation(.default) {
+                            binaryTree = uniqueTree
+                        }
+                    }, systemName: "arrowshape.turn.up.backward.2.fill",
+                                 backgroudColor: .gray)
+                    CustomButton(action: {
+                        withAnimation(.default) {
+                            binaryTree.insert(Int.random(in: 0...100))
                         }
                     }, systemName: "square.and.arrow.down.fill",
                                  backgroudColor: Color(red: 0.176, green: 0.608, blue: 0.94))

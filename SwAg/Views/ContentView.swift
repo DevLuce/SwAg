@@ -21,7 +21,7 @@ struct ContentView: View {
         case algorithm = "Algorithm"
     }
     
-    @State var tabSelection:Tabs = .dataStructure
+    @State private var tabSelection: Tabs = .dataStructure
 
     var body: some View {
         NavigationView {
@@ -30,8 +30,7 @@ struct ContentView: View {
                     .tabItem {
                         Image(systemName: "tray")
                         Text(LocalizedStringKey(Tabs.dataStructure.rawValue))
-                    }
-                    .tag(Tabs.dataStructure)
+                    }.tag(Tabs.dataStructure)
                 AlgorithmList()
                     .tabItem {
                         Image(systemName: "puzzlepiece")
