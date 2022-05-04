@@ -1,26 +1,98 @@
 [
     {
         "idxList" : [5, 1, 6, 2, 4, 7, 3],
-        "colorList" : ["purple", "red", "gray", "green", "brown", "blue", "indigo"]
+        "colorList" : ["purple", "red", "teal", "green", "brown", "blue", "indigo"]
+    },
+    {
+        "idxList" : [5, 1, 6, 2, 4, 7, 3],
+        "colorList" : ["deact", "deact", "deact", "deact", "deact", "deact", "indigo"]
+    },
+    {
+        "idxList" : [5, 1, 6, 2, 4, 7, 3],
+        "colorList" : ["act", "deact", "deact", "deact", "deact", "act", "indigo"]
+    },
+    {
+        "idxList" : [5, 1, 6, 2, 4, 7, 3],
+        "colorList" : ["act", "deact", "deact", "deact", "act", "deact", "indigo"]
+    },
+    {
+        "idxList" : [5, 1, 6, 2, 4, 7, 3],
+        "colorList" : ["act", "deact", "deact", "act", "deact", "deact", "indigo"]
     },
     {
         "idxList" : [2, 1, 6, 5, 4, 7, 3],
-        "colorList" : ["green", "red", "gray", "purple", "brown", "blue", "indigo"]
+        "colorList" : ["act", "deact", "deact", "act", "deact", "deact", "indigo"]
+    },
+    {
+        "idxList" : [2, 1, 6, 5, 4, 7, 3],
+        "colorList" : ["deact", "act", "deact", "act", "deact", "deact", "indigo"]
+    },
+    {
+        "idxList" : [2, 1, 6, 5, 4, 7, 3],
+        "colorList" : ["deact", "deact", "act", "act", "deact", "deact", "indigo"]
+    },
+    {
+        "idxList" : [2, 1, 6, 5, 4, 7, 3],
+        "colorList" : ["deact", "deact", "act", "deact", "deact", "deact", "indigo"]
     },
     {
         "idxList" : [2, 1, 3, 5, 4, 7, 6],
-        "colorList" : ["green", "red", "indigo", "purple", "brown", "blue", "gray"]
+        "colorList" : ["deact", "deact", "indigo", "deact", "deact", "deact", "act"]
+    },
+    {
+        "idxList" : [2, 1, 3, 5, 4, 7, 6],
+        "colorList" : ["deact", "red", "indigo", "deact", "deact", "deact", "deact"]
+    },
+    {
+        "idxList" : [2, 1, 3, 5, 4, 7, 6],
+        "colorList" : ["act", "red", "indigo", "deact", "deact", "deact", "deact"]
     },
     {
         "idxList" : [1, 2, 3, 5, 4, 7, 6],
-        "colorList" : ["red", "green", "indigo", "purple", "brown", "blue", "gray"]
+        "colorList" : ["red", "act", "indigo", "deact", "deact", "deact", "deact"]
+    },
+    {
+        "idxList" : [1, 2, 3, 5, 4, 7, 6],
+        "colorList" : ["red", "green", "indigo", "deact", "deact", "deact", "deact"]
+    },
+    {
+        "idxList" : [1, 2, 3, 5, 4, 7, 6],
+        "colorList" : ["red", "green", "indigo", "deact", "deact", "deact", "teal"]
+    },
+    {
+        "idxList" : [1, 2, 3, 5, 4, 7, 6],
+        "colorList" : ["red", "green", "indigo", "act", "deact", "act", "teal"]
+    },
+    {
+        "idxList" : [1, 2, 3, 5, 4, 7, 6],
+        "colorList" : ["red", "green", "indigo", "deact", "act", "act", "teal"]
+    },
+    {
+        "idxList" : [1, 2, 3, 5, 4, 7, 6],
+        "colorList" : ["red", "green", "indigo", "deact", "deact", "act", "teal"]
     },
     {
         "idxList" : [1, 2, 3, 5, 4, 6, 7],
-        "colorList" : ["red", "green", "indigo", "purple", "brown", "gray", "blue"]
+        "colorList" : ["red", "green", "indigo", "deact", "deact", "teal", "act"]
+    },
+    {
+        "idxList" : [1, 2, 3, 5, 4, 6, 7],
+        "colorList" : ["red", "green", "indigo", "deact", "brown", "teal", "deact"]
+    },
+    {
+        "idxList" : [1, 2, 3, 5, 4, 6, 7],
+        "colorList" : ["red", "green", "indigo", "act", "brown", "teal", "deact"]
     },
     {
         "idxList" : [1, 2, 3, 4, 5, 6, 7],
-        "colorList" : ["red", "green", "indigo", "brown", "purple", "gray", "blue"]
+        "colorList" : ["red", "green", "indigo", "brown", "act", "teal", "deact"]
+    },
+    {
+        "idxList" : [1, 2, 3, 4, 5, 6, 7],
+        "colorList" : ["red", "green", "indigo", "brown", "purple", "teal", "deact"]
+    },
+    {
+        "idxList" : [1, 2, 3, 4, 5, 6, 7],
+        "colorList" : ["red", "green", "indigo", "brown", "purple", "teal", "blue"]
     }
 ]
