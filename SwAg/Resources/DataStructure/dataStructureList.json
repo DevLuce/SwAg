@@ -1,7 +1,8 @@
 [
     {
         "name": "List",
-        "type": "list"
+        "type": "list",
+        "code": "public class Node<Value>{\n\tpublic var value: Value\n\tpublic var next: Node?\n\n\tpublic init(_ value: Value, next: Node? = nil) {\n\t\tself.value = value\n\t\tself.next = next\n\t}\n}"
     },
     {
         "name": "Array",
@@ -9,11 +10,13 @@
     },
     {
         "name": "Stack",
-        "type": "linearData"
+        "type": "linearData",
+        "code": "public struct ArrayStack<T> {\n\tfileprivate var elements = [T]()\n\tpublic init() {}\n\n\tpublic init<S : Sequence>(_ s: S) where S.Iterator.Element == T {\n\t\tself.elements = Array(s.reversed())\n\t}\n\n\tmutating public func pop() -> T? {\n\t\treturn self.elements.popLast()\n\t}\n\n\tmutating public func push(element: T){\n\t\tself.elements.append(element)\n\t}\n\n\tpublic func peek() -> T? {\n\t\treturn self.elements.last\n\t}\n\n\tpublic func isEmpty() -> Bool {\n\t\treturn self.elements.isEmpty\n\t}\n\n\tpublic var count: Int {\n\t\treturn self.elements.count\n\t}\n}"
     },
     {
         "name": "Queue",
-        "type": "linearData"
+        "type": "linearData",
+        "code": "struct Queue<T> {\n\tfileprivate var data: [T] = [T]()\n\tpublic init() {}\n\n\tpublic init<S: Sequence>(_ elements: S) where S.Iterator.Element == T  {\n\t\tdata.append(contentsOf: elements)\n\t}\n\n\tmutating func enqueue(element: T)  {\n\t\tdata.append(element)\n\t}\n\n\tmutating func dequeue() -> T? {\n\t\treturn data.removeFirst()\n\t}\n\n\tmutating func peek() -> T? {\n\t\treturn data.first\n\t}\n\n\tmutating func clear() {\n\t\tdata.removeAll()\n\t}\n\n\tpublic var count: Int {\n\t\treturn data.count\n\t}\n\n\tpublic var capacity: Int {\n\t\tget {\n\t\t\treturn data.capacity\n\t\t}set {\n\t\t\treturn data.reserveCapacity(newValue)\n\t\t}\n\t}\n\n\tvar isFull: Bool {\n\t\treturn data.capacity == data.count\n\t}\n\n\tvar isEmpty: Bool {\n\t\treturn data.isEmpty\n\t}\n}"
     },
     {
         "name": "Hash Table",
@@ -21,15 +24,18 @@
     },
     {
         "name": "Heap",
-        "type": "heap"
+        "type": "heap",
+        "code": "public struct Heap<Element: Equatable> {\n\tpublic var elements: [Element] = []\n\n\tpublic let sort: (Element, Element) -> Bool\n\tpublic init(sort: @escaping (Element, Element) -> Bool, elements: [Element] = []) {\n\t\tself.sort = sort\n\t\tself.elements = elements\n\t\tif !elements.isEmpty {\n\n\t\t\tfor i in stride(from: elements.count / 2 - 1, through: 0, by: -1) {\n\t\t\t\tsiftDown(from: i)\n\t\t\t}\n\t\t}\n\t}\n\n\tpublic var isEmpty: Bool { return elements.isEmpty }\n\tpublic var count: Int { return elements.count }\n\tpublic func peek() -> Element? { return elements.first }\n\n\tfunc leftChildIndex(ofParentAt index: Int) -> Int { return (2 * index) + 1 }\n\tfunc rightChildIndex(ofParentAt index: Int) -> Int { return (2 * index) + 2 }\n\tfunc parentIndex(ofChildAt index: Int) -> Int { return (index - 1) / 2 }\n}"
     },
     {
         "name": "Tree",
-        "type": "tree"
+        "type": "tree",
+        "code": "public class TreeNode<T> {\n\tpublic var value: T\n\tpublic var children: [TreeNode] = []\n\tpublic init(_ value: T) {\n\t\tself.value = value\n\t}\n\n\tpublic func add(_ child: TreeNode) {\n\t\tchildren.append(child)\n\t}\n}"
     },
     {
         "name": "Binary Tree",
-        "type": "binaryTree"
+        "type": "binaryTree",
+        "code": "public class BinaryNode<Element> {\n\tpublic var value: Element\n\tpublic var leftChild: BinaryNode?\n\tpublic var rightChild: BinaryNode?\n\n\tpublic init(value: Element) {\n\t\tself.value = value\n\t}\n}"
     },
 ]
 

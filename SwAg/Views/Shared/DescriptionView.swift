@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import CodeEditorView
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
 
 struct DescriptionView: View {
     let item : ListItem
     @State var buttonText = "Copy to clipboard"
     private let pasteboard = UIPasteboard.general
-    let code : String = "Swift Code"
     
     var sortItems : [SortItem]? {
         switch item.name {
@@ -36,6 +42,14 @@ struct DescriptionView: View {
     @State var linearDataItems = ArraySlice(ModelData().linearData)
     @State var tempLinearData: ArraySlice<(Int, Color)> = ArraySlice([])
     @State var binaryTree = uniqueTree
+    
+    @State private var text: String = """
+    /* There isn't code yet */
+    """
+    
+    @State private var position: CodeEditor.Position  = CodeEditor.Position()
+    @State private var messages: Set<Located<Message>> = Set()
+    @Environment(\.colorScheme) private var colorScheme: ColorScheme
     
     var body: some View {
         VStack{
@@ -80,9 +94,12 @@ struct DescriptionView: View {
             }
             DescriptionCard(
                 VStack {
-                    Spacer()
-                    Text(code)
-                    Spacer()
+                    CodeEditor(text: .constant(item.code ?? text), position: $position, messages: $messages, language: .swift)
+                        .environment(\.codeEditorTheme,
+                                      colorScheme == .dark ? Theme.defaultDark : Theme.defaultLight)
+                        .onTapGesture {
+                            UIApplication.shared.endEditing()
+                        }
                     HStack {
                         Spacer()
                         Button {
@@ -101,23 +118,21 @@ struct DescriptionView: View {
             HStack{
                 if item.type == "linearData" {
                     CustomButton(action: {
-                        if linearDataItems.count > 0 {
-                            if item.name == "Queue" {
-                                tempLinearData.append(linearDataItems.popFirst()!)
-                            } else {
-                                tempLinearData.append(linearDataItems.popLast()!)
-                            }
-                        }
+                        guard linearDataItems.count > 0 else { return }
+                        
+                        let items: (Int, Color) = item.name == "Queue" ? linearDataItems.popFirst()! : linearDataItems.popLast()!
+                        
+                        tempLinearData.append(items)
+                        
                     }, systemName: "square.and.arrow.up.fill",
                                  backgroudColor: Color(red: 0.855, green: 0.0, blue: 0.387))
                     CustomButton(action: {
-                        if linearDataItems.count < 5 {
-                            if item.name == "Queue" {
-                                linearDataItems.append(tempLinearData.popFirst()!)
-                            } else {
-                                linearDataItems.append(tempLinearData.popLast()!)
-                            }
-                        }
+                        guard linearDataItems.count < 5 else { return }
+                        
+                        let items: (Int, Color) = item.name == "Queue" ? tempLinearData.popFirst()! : tempLinearData.popLast()!
+                        
+                        linearDataItems.append(items)
+                        
                     }, systemName: "square.and.arrow.down.fill",
                                  backgroudColor: Color(red: 0.176, green: 0.608, blue: 0.94))
                 } else if item.type == "binaryTree" {
@@ -157,7 +172,7 @@ struct DescriptionView: View {
     }
     
     func copyToClipboard() {
-        pasteboard.string = code
+        pasteboard.string = item.code ?? text
         self.buttonText = "Copied!"
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

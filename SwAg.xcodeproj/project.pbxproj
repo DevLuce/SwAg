@@ -10,6 +10,7 @@
 		1662EAC528202962009FDD4D /* CircleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1662EAC428202962009FDD4D /* CircleNode.swift */; };
 		1662EAC7282036C6009FDD4D /* Diagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1662EAC6282036C6009FDD4D /* Diagram.swift */; };
 		1662EAC928203E52009FDD4D /* BinaryTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1662EAC828203E52009FDD4D /* BinaryTreeView.swift */; };
+		1662EACE282256F0009FDD4D /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = 1662EACD282256F0009FDD4D /* CodeEditorView */; };
 		16901D1C28192AB9000A3CAB /* SwAgApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D1B28192AB9000A3CAB /* SwAgApp.swift */; };
 		16901D1E28192AB9000A3CAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16901D1D28192AB9000A3CAB /* ContentView.swift */; };
 		16901D2028192ABB000A3CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16901D1F28192ABB000A3CAB /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		1662EAC428202962009FDD4D /* CircleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleNode.swift; sourceTree = "<group>"; };
 		1662EAC6282036C6009FDD4D /* Diagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagram.swift; sourceTree = "<group>"; };
 		1662EAC828203E52009FDD4D /* BinaryTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeView.swift; sourceTree = "<group>"; };
+		1662EACF28239416009FDD4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		16901D1828192AB9000A3CAB /* SwAg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwAg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16901D1B28192AB9000A3CAB /* SwAgApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwAgApp.swift; sourceTree = "<group>"; };
 		16901D1D28192AB9000A3CAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1662EACE282256F0009FDD4D /* CodeEditorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +119,7 @@
 		16901D1A28192AB9000A3CAB /* SwAg */ = {
 			isa = PBXGroup;
 			children = (
+				1662EACF28239416009FDD4D /* Info.plist */,
 				16901D1B28192AB9000A3CAB /* SwAgApp.swift */,
 				16901D2F28193228000A3CAB /* Views */,
 				16901D302819323D000A3CAB /* Models */,
@@ -270,6 +274,7 @@
 			);
 			name = SwAg;
 			packageProductDependencies = (
+				1662EACD282256F0009FDD4D /* CodeEditorView */,
 			);
 			productName = SwAg;
 			productReference = 16901D1828192AB9000A3CAB /* SwAg.app */;
@@ -301,6 +306,7 @@
 			);
 			mainGroup = 16901D0F28192AB9000A3CAB;
 			packageReferences = (
+				1662EACC282256F0009FDD4D /* XCRemoteSwiftPackageReference "CodeEditorView" */,
 			);
 			productRefGroup = 16901D1928192AB9000A3CAB /* Products */;
 			projectDirPath = "";
@@ -500,9 +506,9 @@
 				DEVELOPMENT_TEAM = 79Q32HWWTW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwAg/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -530,9 +536,9 @@
 				DEVELOPMENT_TEAM = 79Q32HWWTW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwAg/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -571,6 +577,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1662EACC282256F0009FDD4D /* XCRemoteSwiftPackageReference "CodeEditorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mchakravarty/CodeEditorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1662EACD282256F0009FDD4D /* CodeEditorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1662EACC282256F0009FDD4D /* XCRemoteSwiftPackageReference "CodeEditorView" */;
+			productName = CodeEditorView;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		16901D2628192ABB000A3CAB /* SwAg.xcdatamodeld */ = {

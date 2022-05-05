@@ -41,19 +41,19 @@ struct Stack: View {
                 .overlay(
                     Rectangle()
                         .frame(width: 4)
-                        .foregroundColor(.black),
+                        .foregroundColor(.gray),
                     alignment: .leading
                 )
                 .overlay(
                     Rectangle()
                         .frame(width: 4)
-                        .foregroundColor(.black),
+                        .foregroundColor(.gray),
                     alignment: .trailing
                 )
                 .overlay(
                     Rectangle()
                         .frame(height: 4)
-                        .foregroundColor(.black),
+                        .foregroundColor(.gray),
                     alignment: .bottom
                 )
                 Spacer()

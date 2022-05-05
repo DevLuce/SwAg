@@ -5,27 +5,33 @@
         "children": [
             {
                 "name": "Bubble Sort",
-                "type": "sort"
+                "type": "sort",
+                "code": "func bubbleSort<T: Comparable>(data: [T]) -> [T] {\n\tguard data.count > 1 else { return data }\n\t\n\tvar totalCounter: Int = 0\n\tvar targetData = data\n\tfor i in 0..<(targetData.count-1) {\n\t\tfor j in 0..<(targetData.count-i-1) {\n\t\t\tif targetData[j] > targetData[j+1] {\n\t\t\t\ttargetData.swapAt(j, j+1)\n\t\t\t\ttotalCounter += 1\n\t\t\t}\n\t\t}\n\t}\n\treturn targetData\n}"
             },
             {
                 "name": "Selection Sort",
-                "type": "sort"
+                "type": "sort",
+                "code": "func selectionSort<T: Comparable>(data: [T]) -> [T] {\n\tguard data.count > 1 else { return data }\n\t\n\tvar targetData = data\n\tvar counter: Int = 0\n\tfor index in 0..<(targetData.count-1) {\n\t\tvar lowestIndex = index\n\t\tfor innerIndex in index+1..<targetData.count {\n\t\t\tcounter += 1\n\t\t\tif targetData[lowestIndex] > targetData[innerIndex] {\n\t\t\t\tlowestIndex = innerIndex\n\t\t\t}\n\t\t}\n\t\tindex != lowestIndex ? targetData.swapAt(index, lowestIndex) : nil\n\t}\n\treturn targetData\n}"
             },
             {
                 "name": "Insertion Sort",
-                "type": "sort"
+                "type": "sort",
+                "code": "func insertionSort<T: Comparable>(data: [T]) -> [T] {\n\tvar targetData = data\n\tfor index in 1..<targetData.count {\n\t\tvar innerIndex = index\n\t\tlet temp = targetData[innerIndex]\n\t\twhile innerIndex > 0 && targetData[innerIndex-1] > temp {\n\t\t\ttargetData[innerIndex] = targetData[innerIndex-1]\n\t\t\tinnerIndex -= 1\n\t\t}\n\t\ttargetData[innerIndex] = temp\n\t}\n\treturn targetData\n}"
             },
             {
                 "name": "Heap Sort",
-                "type": "sort"
+                "type": "sort",
+                "code": "public func sorted() -> [Element] {\n\tvar heap = Heap(sort: sort, elements: elements)\n\tfor index in heap.elements.indices.reversed() {\n\t\theap.elements.swapAt(0, index)\n\t\theap.siftDown(from: 0, upTo: index)\n\t}\n\treturn heap.elements\n}"
             },
             {
                 "name": "Merge Sort",
-                "type": "sort"
+                "type": "sort",
+                "code": "func mergeSort<T: Comparable>(data: [T]) -> [T] {\n\tguard data.count > 1 else { return data }\n\tlet middle = data.count / 2\n\tlet left = mergeSort(data:Array(data[..<middle]))\n\tlet right = mergeSort(data:Array(data[middle...]))\n\treturn merge(left, right)\n}\n\nfunc merge<T: Comparable>(_ left: [T], _ right: [T]) -> [T] {\n\tvar leftIndex = 0\n\tvar rightIndex = 0\n\n\tvar result: [T] = []\n\n\twhile left.count > leftIndex && right.count > rightIndex  {\n\t\tlet leftElement = left[leftIndex]\n\t\tlet rightElement = right[rightIndex]\n\n\t\tif leftElement < rightElement {\n\t\t\tresult.append(leftElement)\n\t\t\tleftIndex += 1\n\t\t} else if leftElement > rightElement {\n\t\t\tresult.append(rightElement)\n\t\t\trightIndex += 1\n\t\t} else {\n\t\t\tresult.append(leftElement)\n\t\t\tleftIndex += 1\n\t\t\tresult.append(rightElement)\n\t\t\trightIndex += 1\n\t\t}\n\t}\n\n\tif leftIndex < left.count {\n\t\tresult.append(contentsOf: left[leftIndex...])\n\t}\n\tif rightIndex < right.count {\n\t\tresult.append(contentsOf: right[rightIndex...])\n\t}\n\treturn result\n}"
             },
             {
                 "name": "Quick Sort",
-                "type": "sort"
+                "type": "sort",
+                "code": "func quicksort<T: Comparable>(_ a: [T]) -> [T] {\n\tguard a.count > 1 else { return a }\n\n\tlet pivot = a[a.count/2]\n\tlet less = a.filter { $0 < pivot }\n\tlet equal = a.filter { $0 == pivot }\n\tlet greater = a.filter { $0 > pivot }\n\n\treturn quicksort(less) + equal + quicksort(greater)\n}"
             }
         ]
     },
@@ -35,11 +41,13 @@
         "children": [
             {
                 "name": "Linear Search",
-                "type": "search"
+                "type": "search",
+                "code": "func linearSearch<T: Equatable>(target: T, in collection: [T]) -> T? {\n\tfor item in collection {\n\t\tif item == target {\n\t\t\treturn item\n\t\t}\n\t}\n\treturn nil\n}"
             },
             {
                 "name": "Binary Search",
-                "type": "search"
+                "type": "search",
+                "code": "func binarySearch<T: Comparable>(target: T, in collection:[T]) -> T? {\n\tvar data = collection.sorted()\n\n\tvar startIndex: Int = 0\n\tvar endIndex: Int = data.count-1\n\twhile startIndex <= endIndex {\n\t\tvar midIndex: Int = (startIndex + endIndex) / 2\n\t\tif data[midIndex] == target {\n\t\t\treturn target\n\t\t}else if data[midIndex] < target {\n\t\t\tstartIndex = midIndex + 1\n\t\t}else if data[midIndex] > target {\n\t\t\tendIndex = midIndex - 1\n\t\t}\n\t}\n\treturn nil\n}"
             }
         ]
     },

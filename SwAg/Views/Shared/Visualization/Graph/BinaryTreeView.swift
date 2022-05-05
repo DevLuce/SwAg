@@ -27,6 +27,7 @@ struct RoundedCircleStyle: ViewModifier {
             .frame(width: 50, height: 50)
             .background(Circle().stroke())
             .background(Circle().fill(Color.white))
+            .foregroundColor(Color.black)
             .padding(10)
     }
 }

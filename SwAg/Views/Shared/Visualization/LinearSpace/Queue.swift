@@ -16,7 +16,7 @@ struct Queue: View {
             VStack {
                 Divider()
                     .frame(width: proxy.size.width * 0.95, height: 3)
-                    .background(.black)
+                    .background(.gray)
                 HStack(alignment: .center, spacing: proxy.size.width / 120) {
                     Spacer()
                         .frame(height: proxy.size.height / 3)
@@ -43,7 +43,7 @@ struct Queue: View {
                 }
                 Divider()
                     .frame(width: proxy.size.width * 0.95, height: 3)
-                    .background(.black)
+                    .background(.gray)
             }
             .position(x:proxy.size.width / 2, y: proxy.size.height / 2)
         }

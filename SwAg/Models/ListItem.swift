@@ -11,6 +11,7 @@ struct ListItem: Hashable, Decodable, Identifiable, CustomStringConvertible {
     var id: Self { self }
     var name: String
     var type: String
+    var code: String? = nil
     var children: [ListItem]? = nil
     var description: String {
         switch children {

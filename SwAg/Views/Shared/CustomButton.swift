@@ -20,15 +20,15 @@ struct CustomButton: View {
             Image(systemName: systemName)
                 .resizable()
                 .scaledToFit()
+                .frame(minWidth: 0,
+                       maxWidth: .infinity,
+                       minHeight: 35,
+                       maxHeight: 35)
+                .padding()
+                .foregroundColor(.black)
+                .background(backgroudColor)
+                .cornerRadius(6.0)
         }
-        .frame(minWidth: 0,
-               maxWidth: .infinity,
-               minHeight: 35,
-               maxHeight: 35)
-        .padding()
-        .foregroundColor(.black)
-        .background(backgroudColor)
-        .cornerRadius(6.0)
     }
 }
 
