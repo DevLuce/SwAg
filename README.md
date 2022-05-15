@@ -30,15 +30,9 @@ Apple Developer Academy @ POSTECH, NC1 Project
 
 ## :fireworks: Screenshots
 
-<img src="https://user-images.githubusercontent.com/56063805/168462561-e83506de-0a78-426c-ac49-976625e2ac0f.png" width="33%">
-<img src="https://user-images.githubusercontent.com/56063805/168462563-3730b5df-8a7d-4da8-9041-e6dbdb4c9c13.png" width="33%">
-<img src="https://user-images.githubusercontent.com/56063805/168462565-328d855d-ec1e-48bf-a164-5aab98383eb4.png" width="33%">
-<img src="https://user-images.githubusercontent.com/56063805/168462567-ee288c12-db6f-4e7a-b183-f6e0a5ca15a3.png" width="33%">
-<img src="https://user-images.githubusercontent.com/56063805/168462569-9660d7b5-dca2-4930-890a-10c3825a4468.png" width="33%">
-<img src="https://user-images.githubusercontent.com/56063805/168462571-7f9df117-e121-4e52-ba44-c21c930d6d98.png" width="33%">
-<img src="https://user-images.githubusercontent.com/56063805/168462572-07b3b4f9-6176-4e64-af88-3badf1121365.png" width="33%">
-<img src="https://user-images.githubusercontent.com/56063805/168462573-6b9c8dd8-7f0e-4acc-85fa-6781ade068c5.png" width="33%">
-<img src="https://user-images.githubusercontent.com/56063805/168462577-2ba57697-6f67-4a45-832d-49c0bbde0e8d.png" width="33%">
+<img src="https://user-images.githubusercontent.com/56063805/168462561-e83506de-0a78-426c-ac49-976625e2ac0f.png" width="33%"><img src="https://user-images.githubusercontent.com/56063805/168462563-3730b5df-8a7d-4da8-9041-e6dbdb4c9c13.png" width="33%"><img src="https://user-images.githubusercontent.com/56063805/168462565-328d855d-ec1e-48bf-a164-5aab98383eb4.png" width="33%">
+<img src="https://user-images.githubusercontent.com/56063805/168462567-ee288c12-db6f-4e7a-b183-f6e0a5ca15a3.png" width="33%"><img src="https://user-images.githubusercontent.com/56063805/168462569-9660d7b5-dca2-4930-890a-10c3825a4468.png" width="33%"><img src="https://user-images.githubusercontent.com/56063805/168462571-7f9df117-e121-4e52-ba44-c21c930d6d98.png" width="33%">
+<img src="https://user-images.githubusercontent.com/56063805/168462572-07b3b4f9-6176-4e64-af88-3badf1121365.png" width="33%"><img src="https://user-images.githubusercontent.com/56063805/168462573-6b9c8dd8-7f0e-4acc-85fa-6781ade068c5.png" width="33%"><img src="https://user-images.githubusercontent.com/56063805/168462577-2ba57697-6f67-4a45-832d-49c0bbde0e8d.png" width="33%">
 
 
 ## :sparkles: Skills & Tech Stack
